@@ -1,0 +1,16 @@
+const fs = require('fs');
+const path = require('path');
+const root = path.join(__dirname);
+const indexPath = path.join(root, 'index.html');
+const p1 = fs.readFileSync(path.join(root, 'partials', 'body-part1.html'), 'utf8');
+const p2 = fs.readFileSync(path.join(root, 'partials', 'body-part2.html'), 'utf8');
+let index = fs.readFileSync(indexPath, 'utf8');
+const body = p1 + p2;
+const marker = '<script src="js/product-finder.js"></script>';
+const insertAt = index.indexOf(marker);
+if (insertAt === -1) throw new Error('marker not found');
+const head = index.slice(0, index.indexOf('<body'));
+const tail = index.slice(insertAt);
+index = head + '<body class="bg-[#f8f7f5] text-charcoal antialiased">\n\n' + body + '\n\n' + tail;
+fs.writeFileSync(indexPath, index);
+console.log('Merged', index.length, 'chars');

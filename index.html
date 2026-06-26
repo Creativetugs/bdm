@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bernard Dalsin Manufacturing | Premium Venting Solutions Since 1944</title>
+  <meta name="description" content="Professional-grade chimney and venting systems. CHIM-A-LATOR®, BioVent®, Dalsin Line®, Pro-Form®. Trusted by dealers across North America.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,600;9..40,700;9..40,800&family=Instrument+Serif&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = { theme: { extend: {
+      colors: { primary: '#d33b19', 'primary-dark': '#b03014', dark: '#0f0f0f', charcoal: '#1a1a1a', steel: '#2d3436' },
+      fontFamily: { sans: ['DM Sans','system-ui','sans-serif'], serif: ['Instrument Serif','Georgia','serif'] }
+    }}}
+  </script>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="bg-[#f8f7f5] text-charcoal antialiased">
+
+
+<!-- BDM Branded SVG Icons -->
+<svg xmlns="http://www.w3.org/2000/svg" class="hidden" aria-hidden="true">
+  <symbol id="ico-dealer" viewBox="0 0 48 48"><rect x="6" y="14" width="36" height="26" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><path d="M6 20h36M16 14V10a4 4 0 018 0v4" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="24" cy="28" r="4" fill="currentColor" opacity=".25"/></symbol>
+  <symbol id="ico-location" viewBox="0 0 48 48"><path d="M24 4C16.3 4 10 10.3 10 18c0 10.5 14 26 14 26s14-15.5 14-26C38 10.3 31.7 4 24 4z" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="24" cy="18" r="5" fill="currentColor" opacity=".25"/></symbol>
+  <symbol id="ico-catalog" viewBox="0 0 48 48"><rect x="8" y="6" width="32" height="36" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><path d="M14 14h20M14 22h20M14 30h12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+  <symbol id="ico-warranty" viewBox="0 0 48 48"><path d="M24 4l16 6v12c0 10-6.8 17.4-16 22C14.8 39.4 8 32 8 22V10L24 4z" fill="none" stroke="currentColor" stroke-width="2"/><path d="M18 24l4 4 8-8" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/></symbol>
+  <symbol id="ico-chimney" viewBox="0 0 48 48"><rect x="14" y="8" width="20" height="32" rx="1" fill="none" stroke="currentColor" stroke-width="2"/><path d="M10 40h28M18 8V4h12v4" stroke="currentColor" stroke-width="2"/><path d="M20 16h8M20 24h8" stroke="currentColor" stroke-width="1.5" opacity=".5"/></symbol>
+  <symbol id="ico-flame" viewBox="0 0 48 48"><path d="M24 42c-8 0-14-6-14-14 0-8 8-16 14-24 6 8 14 16 14 24 0 8-6 14-14 14z" fill="none" stroke="currentColor" stroke-width="2"/><path d="M24 34c-3 0-5-2.5-5-5.5 0-3 3-6 5-9 2 3 5 6 5 9 0 3-2 5.5-5 5.5z" fill="currentColor" opacity=".3"/></symbol>
+  <symbol id="ico-hvac" viewBox="0 0 48 48"><circle cx="24" cy="24" r="16" fill="none" stroke="currentColor" stroke-width="2"/><path d="M24 8v32M8 24h32M13 13l22 22M35 13L13 35" stroke="currentColor" stroke-width="1.5" opacity=".4"/></symbol>
+  <symbol id="ico-factory" viewBox="0 0 48 48"><path d="M4 40V20l12-8 8 6 8-6 12 8v20H4z" fill="none" stroke="currentColor" stroke-width="2"/><rect x="16" y="28" width="6" height="12" fill="currentColor" opacity=".2"/><rect x="26" y="24" width="6" height="16" fill="currentColor" opacity=".2"/></symbol>
+  <symbol id="ico-brick" viewBox="0 0 48 48"><rect x="6" y="10" width="16" height="8" fill="none" stroke="currentColor" stroke-width="1.5"/><rect x="26" y="10" width="16" height="8" fill="none" stroke="currentColor" stroke-width="1.5"/><rect x="16" y="22" width="16" height="8" fill="none" stroke="currentColor" stroke-width="1.5"/><rect x="6" y="34" width="16" height="8" fill="none" stroke="currentColor" stroke-width="1.5"/><rect x="26" y="34" width="16" height="8" fill="none" stroke="currentColor" stroke-width="1.5"/></symbol>
+  <symbol id="ico-wrench" viewBox="0 0 48 48"><path d="M14 34l4-4a8 8 0 0111-11l8-8 4 4-8 8a8 8 0 01-11 11l-4 4a4 4 0 01-5.7-5.7z" fill="none" stroke="currentColor" stroke-width="2"/></symbol>
+  <symbol id="ico-box" viewBox="0 0 48 48"><path d="M24 4L4 14v20l20 10 20-10V14L24 4z" fill="none" stroke="currentColor" stroke-width="2"/><path d="M4 14l20 10 20-10M24 24v20" stroke="currentColor" stroke-width="2"/></symbol>
+  <symbol id="ico-search" viewBox="0 0 48 48"><circle cx="20" cy="20" r="12" fill="none" stroke="currentColor" stroke-width="2.5"/><path d="M30 30l12 12" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/></symbol>
+</svg>
+
+<!-- HEADER -->
+<header id="main-nav" class="fixed w-full z-50 bg-white/80 backdrop-blur-md border-b border-slate-200/80 transition-all duration-300">
+  <div class="max-w-7xl mx-auto px-5 lg:px-8 py-3.5 flex justify-between items-center">
+    <a href="#" class="flex items-center gap-3">
+      <img src="https://dalsinmfg.com/wp-content/uploads/2016/04/logo.png" alt="Bernard Dalsin Manufacturing" class="h-9 lg:h-10">
+    </a>
+    <nav class="hidden lg:flex items-center gap-8 text-sm font-semibold text-slate-700">
+      <a href="#tools" class="hover:text-primary transition">Dealer Tools</a>
+      <a href="#ecosystem" class="hover:text-primary transition">Products</a>
+      <a href="#finder" class="hover:text-primary transition">Product Finder</a>
+      <a href="#support" class="hover:text-primary transition">Support</a>
+      <a href="#history" class="hover:text-primary transition">Our Story</a>
+    </nav>
+    <div class="hidden lg:flex items-center gap-4">
+      <a href="tel:8007299505" class="text-sm font-semibold text-slate-600 hover:text-primary">800-729-9505</a>
+      <a href="https://dalsinmfg.com/my-account/" class="bg-charcoal text-white px-5 py-2.5 rounded-lg text-sm font-bold hover:bg-primary transition">Dealer Login</a>
+    </div>
+    <button id="nav-toggle" class="lg:hidden p-2 rounded-lg hover:bg-slate-100" aria-label="Menu" aria-expanded="false">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+    </button>
+  </div>
+  <div id="mobile-menu" class="hidden lg:hidden border-t border-slate-200 bg-white px-5 py-4 space-y-3">
+    <a href="#tools" class="block font-semibold py-2">Dealer Tools</a>
+    <a href="#ecosystem" class="block font-semibold py-2">Products</a>
+    <a href="#finder" class="block font-semibold py-2">Product Finder</a>
+    <a href="#support" class="block font-semibold py-2">Support</a>
+    <a href="#history" class="block font-semibold py-2">Our Story</a>
+    <a href="tel:8007299505" class="block font-semibold text-primary py-2">800-729-9505</a>
+    <a href="https://dalsinmfg.com/my-account/" class="block bg-charcoal text-white text-center py-3 rounded-lg font-bold">Dealer Login</a>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero-bg grain relative min-h-screen flex items-center pt-24 pb-16 overflow-hidden">
+  <div class="absolute top-32 right-8 lg:right-24 float-badge hidden md:block">
+    <div class="bg-white/10 backdrop-blur border border-white/20 rounded-2xl px-5 py-3 text-white text-sm font-semibold">
+      <span class="text-primary">●</span> Family Owned Since 1944
+    </div>
+  </div>
+  <div class="max-w-7xl mx-auto px-5 lg:px-8 w-full relative z-10">
+    <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+      <div class="text-white">
+        <p class="section-label text-primary text-xs font-bold uppercase mb-4 reveal">Bernard Dalsin Manufacturing</p>
+        <h1 class="font-serif text-5xl lg:text-6xl xl:text-7xl leading-[1.05] mb-6 reveal">
+          Precision Venting<br><em class="text-primary not-italic">Built for Performance</em>
+        </h1>
+        <p class="text-lg lg:text-xl text-slate-300 mb-8 max-w-xl leading-relaxed reveal">
+          For over 75 years, BDM has designed and manufactured premium chimney, venting, and fireplace solutions trusted by distributors, contractors, and OEM partners across North America.
+        </p>
+        <div class="flex flex-wrap gap-4 mb-10 reveal">
+          <a href="#finder" class="pulse-cta bg-primary text-white px-8 py-4 rounded-xl font-bold hover:bg-primary-dark transition shadow-lg shadow-primary/30">Find Your Venting Solution</a>
+          <a href="#ecosystem" class="border-2 border-white/80 text-white px-8 py-4 rounded-xl font-bold hover:bg-white hover:text-charcoal transition">Explore Products</a>
+        </div>
+        <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 reveal">
+          <div class="text-center sm:text-left"><div class="stat-num text-3xl font-extrabold text-primary" data-count="75" data-suffix="+">0</div><div class="text-xs text-slate-400 font-semibold uppercase tracking-wide mt-1">Years</div></div>
+          <div class="text-center sm:text-left"><div class="text-3xl font-extrabold text-white">USA</div><div class="text-xs text-slate-400 font-semibold uppercase tracking-wide mt-1">Made</div></div>
+          <div class="text-center sm:text-left"><div class="text-3xl font-extrabold text-white">4</div><div class="text-xs text-slate-400 font-semibold uppercase tracking-wide mt-1">Product Lines</div></div>
+          <div class="text-center sm:text-left"><div class="text-3xl font-extrabold text-white">OEM</div><div class="text-xs text-slate-400 font-semibold uppercase tracking-wide mt-1">Partner Ready</div></div>
+        </div>
+      </div>
+      <div class="hidden lg:block reveal">
+        <div class="finder-glow bg-white rounded-2xl p-6 lg:p-8">
+          <div class="flex items-center gap-3 mb-5">
+            <svg class="bdm-icon"><use href="#ico-search"/></svg>
+            <div><p class="text-xs font-bold uppercase tracking-wider text-primary">Smart Product Finder</p><p class="font-bold text-charcoal">Get matched in 30 seconds</p></div>
+          </div>
+          <p class="text-slate-600 text-sm mb-4">Answer 5 quick questions and we'll recommend the right CHIM-A-LATOR®, BioVent®, Dalsin Line®, or Pro-Form® system.</p>
+          <a href="#finder" class="block w-full bg-charcoal text-white text-center py-3.5 rounded-xl font-bold hover:bg-primary transition">Start Product Finder →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 2: QUICK ACCESS TOOLS -->
+<section id="tools" class="py-24 lg:py-28">
+  <div class="max-w-7xl mx-auto px-5 lg:px-8">
+    <div class="text-center max-w-2xl mx-auto mb-14 reveal">
+      <p class="section-label text-primary text-xs font-bold uppercase mb-3">Dealer Portal</p>
+      <h2 class="text-3xl lg:text-4xl font-bold text-charcoal mb-4">Everything You Need in One Place</h2>
+      <p class="text-slate-600">Streamlined tools for authorized dealers, contractors, and distribution partners.</p>
+    </div>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      <a href="https://dalsinmfg.com/my-account/" class="reveal card-lift bg-white rounded-2xl p-8 border border-slate-200 group block">
+        <div class="icon-ring w-14 h-14 rounded-xl flex items-center justify-center mb-5 group-hover:scale-110 transition"><svg class="bdm-icon"><use href="#ico-dealer"/></svg></div>
+        <h3 class="font-bold text-lg mb-2 group-hover:text-primary transition">Dealer Ordering Portal</h3>
+        <p class="text-slate-600 text-sm leading-relaxed">Access pricing, inventory, and place orders online.</p>
+      </a>
+      <a href="https://dalsinmfg.com/find-a-dealer/" class="reveal card-lift bg-white rounded-2xl p-8 border border-slate-200 group block">
+        <div class="icon-ring w-14 h-14 rounded-xl flex items-center justify-center mb-5 group-hover:scale-110 transition"><svg class="bdm-icon"><use href="#ico-location"/></svg></div>
+        <h3 class="font-bold text-lg mb-2 group-hover:text-primary transition">Find a Dealer</h3>
+        <p class="text-slate-600 text-sm leading-relaxed">Locate authorized BDM dealers near you.</p>
+      </a>
+      <a href="https://dalsinmfg.com/catalog/" class="reveal card-lift bg-white rounded-2xl p-8 border border-slate-200 group block">
+        <div class="icon-ring w-14 h-14 rounded-xl flex items-center justify-center mb-5 group-hover:scale-110 transition"><svg class="bdm-icon"><use href="#ico-catalog"/></svg></div>
+        <h3 class="font-bold text-lg mb-2 group-hover:text-primary transition">Download Product Catalog</h3>
+        <p class="text-slate-600 text-sm leading-relaxed">Browse product specs and installation guides.</p>
+      </a>
+      <a href="https://dalsinmfg.com/warranty-registration/" class="reveal card-lift bg-white rounded-2xl p-8 border border-slate-200 group block">
+        <div class="icon-ring w-14 h-14 rounded-xl flex items-center justify-center mb-5 group-hover:scale-110 transition"><svg class="bdm-icon"><use href="#ico-warranty"/></svg></div>
+        <h3 class="font-bold text-lg mb-2 group-hover:text-primary transition">Register Warranty</h3>
+        <p class="text-slate-600 text-sm leading-relaxed">Fast and easy warranty registration for products.</p>
+      </a>
+    </div>
+    <div class="text-center mt-12 reveal">
+      <a href="https://dalsinmfg.com/my-account/" class="inline-flex items-center gap-2 bg-charcoal text-white px-8 py-4 rounded-xl font-bold hover:bg-primary transition">Access Dealer Tools →</a>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 3: PRODUCT ECOSYSTEM -->
+<section id="ecosystem" class="py-24 lg:py-28 bg-charcoal text-white relative overflow-hidden">
+  <div class="absolute inset-0 opacity-5" style="background-image:radial-gradient(circle at 20% 50%,#d33b19 0%,transparent 50%),radial-gradient(circle at 80% 20%,#d33b19 0%,transparent 40%)"></div>
+  <div class="max-w-7xl mx-auto px-5 lg:px-8 relative">
+    <div class="max-w-2xl mb-14 reveal">
+      <p class="section-label text-primary text-xs font-bold uppercase mb-3">Product Lines</p>
+      <h2 class="text-3xl lg:text-4xl font-bold mb-4">Professional Grade Product Systems</h2>
+      <p class="text-slate-400 text-lg">Built for durability, safety, and high-performance installations.</p>
+    </div>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
+      <a href="https://dalsinmfg.com/product-category/chimney-caps/" data-wc-category="chimney-caps" class="reveal card-lift group p-6 rounded-xl border border-slate-700 hover:border-primary hover:bg-primary/10 transition text-center">
+        <svg class="bdm-icon mx-auto mb-3 text-primary"><use href="#ico-chimney"/></svg>
+        <span class="font-semibold text-sm lg:text-base group-hover:text-primary transition">Chimney Caps</span>
+      </a>
+      <a href="https://dalsinmfg.com/product-category/dampers/" data-wc-category="dampers" class="reveal card-lift group p-6 rounded-xl border border-slate-700 hover:border-primary hover:bg-primary/10 transition text-center">
+        <svg class="bdm-icon mx-auto mb-3 text-primary"><use href="#ico-chimney"/></svg>
+        <span class="font-semibold text-sm lg:text-base group-hover:text-primary transition">Top Sealing Dampers</span>
+      </a>
+      <a href="https://dalsinmfg.com/product-category/pellet-vent/" data-wc-category="pellet-vent" class="reveal card-lift group p-6 rounded-xl border border-slate-700 hover:border-primary hover:bg-primary/10 transition text-center">
+        <svg class="bdm-icon mx-auto mb-3 text-primary"><use href="#ico-flame"/></svg>
+        <span class="font-semibold text-sm lg:text-base group-hover:text-primary transition">Pellet Vent Systems</span>
+      </a>
+      <a href="https://dalsinmfg.com/product-category/flexible-liners/" data-wc-category="flexible-liners" class="reveal card-lift group p-6 rounded-xl border border-slate-700 hover:border-primary hover:bg-primary/10 transition text-center">
+        <svg class="bdm-icon mx-auto mb-3 text-primary"><use href="#ico-box"/></svg>
+        <span class="font-semibold text-sm lg:text-base group-hover:text-primary transition">Flexible Liners</span>
+      </a>
+      <a href="https://dalsinmfg.com/product-category/rigid-liners/" data-wc-category="rigid-liners" class="reveal card-lift group p-6 rounded-xl border border-slate-700 hover:border-primary hover:bg-primary/10 transition text-center">
+        <svg class="bdm-icon mx-auto mb-3 text-primary"><use href="#ico-box"/></svg>
+        <span class="font-semibold text-sm lg:text-base group-hover:text-primary transition">Rigid Liners</span>
+      </a>
+      <a href="https://dalsinmfg.com/product-category/direct-vent/" data-wc-category="direct-vent" class="reveal card-lift group p-6 rounded-xl border border-slate-700 hover:border-primary hover:bg-primary/10 transition text-center">
+        <svg class="bdm-icon mx-auto mb-3 text-primary"><use href="#ico-hvac"/></svg>
+        <span class="font-semibold text-sm lg:text-base group-hover:text-primary transition">Direct Vent Systems</span>
+      </a>
+      <a href="https://dalsinmfg.com/product-category/fresh-air/" data-wc-category="fresh-air" class="reveal card-lift group p-6 rounded-xl border border-slate-700 hover:border-primary hover:bg-primary/10 transition text-center">
+        <svg class="bdm-icon mx-auto mb-3 text-primary"><use href="#ico-hvac"/></svg>
+        <span class="font-semibold text-sm lg:text-base group-hover:text-primary transition">Fresh Air Intake</span>
+      </a>
+      <a href="https://dalsinmfg.com/product-category/accessories/" data-wc-category="accessories" class="reveal card-lift group p-6 rounded-xl border border-slate-700 hover:border-primary hover:bg-primary/10 transition text-center">
+        <svg class="bdm-icon mx-auto mb-3 text-primary"><use href="#ico-wrench"/></svg>
+        <span class="font-semibold text-sm lg:text-base group-hover:text-primary transition">Accessories</span>
+      </a>
+    </div>
+    <div class="flex flex-wrap gap-4 items-center reveal">
+      <a href="https://dalsinmfg.com/shop/" class="inline-flex bg-primary text-white px-8 py-4 rounded-xl font-bold hover:bg-primary-dark transition">Browse All Product Categories</a>
+      <div class="flex flex-wrap gap-3 text-xs font-bold uppercase tracking-wider text-slate-500">
+        <span class="border border-slate-600 px-3 py-1.5 rounded-full">CHIM-A-LATOR®</span>
+        <span class="border border-slate-600 px-3 py-1.5 rounded-full">BioVent®</span>
+        <span class="border border-slate-600 px-3 py-1.5 rounded-full">Dalsin Line®</span>
+        <span class="border border-slate-600 px-3 py-1.5 rounded-full">Pro-Form®</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 4: INDUSTRIES -->
+<section id="industries" class="py-24 lg:py-28">
+  <div class="max-w-7xl mx-auto px-5 lg:px-8">
+    <div class="text-center max-w-2xl mx-auto mb-14 reveal">
+      <p class="section-label text-primary text-xs font-bold uppercase mb-3">Who We Serve</p>
+      <h2 class="text-3xl lg:text-4xl font-bold mb-4">Serving Specialized Industries</h2>
+      <p class="text-slate-600">Purpose-built venting solutions for the professionals who install them every day.</p>
+    </div>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div class="reveal card-lift flex items-start gap-5 bg-white rounded-2xl p-7 border border-slate-200">
+        <div class="icon-ring w-12 h-12 rounded-xl flex-shrink-0 flex items-center justify-center"><svg class="w-6 h-6 text-primary"><use href="#ico-flame"/></svg></div>
+        <div><h3 class="font-bold text-lg mb-1">Hearth Professionals</h3><p class="text-slate-600 text-sm">Fireplace and stove installers who demand reliable, code-compliant venting.</p></div>
+      </div>
+      <div class="reveal card-lift flex items-start gap-5 bg-white rounded-2xl p-7 border border-slate-200">
+        <div class="icon-ring w-12 h-12 rounded-xl flex-shrink-0 flex items-center justify-center"><svg class="w-6 h-6 text-primary"><use href="#ico-hvac"/></svg></div>
+        <div><h3 class="font-bold text-lg mb-1">HVAC Contractors</h3><p class="text-slate-600 text-sm">Direct vent and combustion air systems for gas appliance installations.</p></div>
+      </div>
+      <div class="reveal card-lift flex items-start gap-5 bg-white rounded-2xl p-7 border border-slate-200">
+        <div class="icon-ring w-12 h-12 rounded-xl flex-shrink-0 flex items-center justify-center"><svg class="w-6 h-6 text-primary"><use href="#ico-factory"/></svg></div>
+        <div><h3 class="font-bold text-lg mb-1">OEM Manufacturers</h3><p class="text-slate-600 text-sm">Custom venting systems engineered for manufacturing partners.</p></div>
+      </div>
+      <div class="reveal card-lift flex items-start gap-5 bg-white rounded-2xl p-7 border border-slate-200">
+        <div class="icon-ring w-12 h-12 rounded-xl flex-shrink-0 flex items-center justify-center"><svg class="w-6 h-6 text-primary"><use href="#ico-brick"/></svg></div>
+        <div><h3 class="font-bold text-lg mb-1">Building Supply Companies</h3><p class="text-slate-600 text-sm">Wholesale partners stocking professional-grade venting products.</p></div>
+      </div>
+      <div class="reveal card-lift flex items-start gap-5 bg-white rounded-2xl p-7 border border-slate-200">
+        <div class="icon-ring w-12 h-12 rounded-xl flex-shrink-0 flex items-center justify-center"><svg class="w-6 h-6 text-primary"><use href="#ico-wrench"/></svg></div>
+        <div><h3 class="font-bold text-lg mb-1">Chimney Service Professionals</h3><p class="text-slate-600 text-sm">Relining, caps, and dampers for chimney sweep and repair specialists.</p></div>
+      </div>
+      <div class="reveal card-lift flex items-start gap-5 bg-white rounded-2xl p-7 border border-slate-200">
+        <div class="icon-ring w-12 h-12 rounded-xl flex-shrink-0 flex items-center justify-center"><svg class="w-6 h-6 text-primary"><use href="#ico-box"/></svg></div>
+        <div><h3 class="font-bold text-lg mb-1">Distributors</h3><p class="text-slate-600 text-sm">North American distribution network with dealer-focused support.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 5: PRODUCT FINDER -->
+<section id="finder" class="py-24 lg:py-32 bg-gradient-to-b from-slate-100 to-[#f8f7f5]">
+  <div class="max-w-5xl mx-auto px-5 lg:px-8">
+    <div class="text-center mb-12 reveal">
+      <p class="section-label text-primary text-xs font-bold uppercase mb-3">Smart Lead Tool</p>
+      <h2 class="text-3xl lg:text-5xl font-bold mb-4">Find the Right Venting Solution</h2>
+      <p class="text-slate-600 text-lg max-w-xl mx-auto">Select your installation criteria and get instant product recommendations from our full catalog.</p>
+    </div>
+    <div class="finder-glow bg-white rounded-2xl overflow-hidden reveal">
+      <div class="h-1.5 bg-slate-100"><div id="finder-progress" class="h-full bg-primary transition-all duration-500" style="width:0%"></div></div>
+      <form id="product-finder-form" class="p-8 lg:p-10">
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 mb-8">
+          <div>
+            <label class="block text-xs font-bold uppercase tracking-wider text-slate-500 mb-2">Fuel Type</label>
+            <select name="fuel" class="w-full p-3.5 border border-slate-200 rounded-xl bg-slate-50 font-medium">
+              <option value="">Select fuel type</option>
+              <option>Wood</option><option>Gas</option><option>Propane</option><option>Oil</option><option>Pellet</option><option>Multi-Fuel</option>
+            </select>
+          </div>
+          <div>
+            <label class="block text-xs font-bold uppercase tracking-wider text-slate-500 mb-2">Installation Type</label>
+            <select name="install" class="w-full p-3.5 border border-slate-200 rounded-xl bg-slate-50 font-medium">
+              <option value="">Select installation</option>
+              <option>Masonry Chimney</option><option>Prefabricated Chimney</option><option>Through-Wall</option><option>Through-Roof</option><option>Interior Run</option><option>Masonry Chimney Relining</option>
+            </select>
+          </div>
+          <div>
+            <label class="block text-xs font-bold uppercase tracking-wider text-slate-500 mb-2">Diameter</label>
+            <select name="diameter" class="w-full p-3.5 border border-slate-200 rounded-xl bg-slate-50 font-medium">
+              <option value="">Select diameter</option>
+              <option>3"</option><option>4"</option><option>5"</option><option>6"</option><option>7"</option><option>8"</option><option>10"</option><option>12"</option>
+            </select>
+          </div>
+          <div>
+            <label class="block text-xs font-bold uppercase tracking-wider text-slate-500 mb-2">Material Type</label>
+            <select name="material" class="w-full p-3.5 border border-slate-200 rounded-xl bg-slate-50 font-medium">
+              <option value="">Select material</option>
+              <option>Stainless Steel</option><option>Type 304 Stainless Steel</option><option>Type 316L Stainless Steel</option><option>Galvanized Steel</option><option>Aluminum</option>
+            </select>
+          </div>
+          <div class="sm:col-span-2 lg:col-span-2">
+            <label class="block text-xs font-bold uppercase tracking-wider text-slate-500 mb-2">Application</label>
+            <select name="application" class="w-full p-3.5 border border-slate-200 rounded-xl bg-slate-50 font-medium">
+              <option value="">Select application</option>
+              <option>Fireplace</option><option>Stove</option><option>Pellet Stove</option><option>Direct Vent Fireplace</option><option>Chimney Relining</option><option>Chimney Top Protection</option><option>Combustion Air Supply</option>
+            </select>
+          </div>
+        </div>
+        <button type="submit" class="w-full bg-charcoal text-white py-4 rounded-xl font-bold text-lg hover:bg-primary transition flex items-center justify-center gap-2">
+          <svg class="w-5 h-5"><use href="#ico-search"/></svg>
+          Get Product Recommendations
+        </button>
+      </form>
+      <div id="finder-results-wrap" class="hidden border-t border-slate-100 px-8 lg:px-10 pb-8 lg:pb-10">
+        <h3 class="font-bold text-lg mb-5 pt-6 flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-green-500"></span> Your Matched Products</h3>
+        <div id="finder-results" class="space-y-4"></div>
+        <p class="text-xs text-slate-400 mt-6 text-center">Need a custom spec? <a href="#contact" class="text-primary font-semibold hover:underline">Contact our technical team</a>.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 6: WHY BDM -->
+<section id="why-bdm" class="py-24 lg:py-28">
+  <div class="max-w-7xl mx-auto px-5 lg:px-8">
+    <div class="text-center max-w-2xl mx-auto mb-14 reveal">
+      <p class="section-label text-primary text-xs font-bold uppercase mb-3">The BDM Difference</p>
+      <h2 class="text-3xl lg:text-4xl font-bold mb-4">Why Contractors &amp; Dealers Choose BDM</h2>
+    </div>
+    <div class="grid md:grid-cols-2 gap-6">
+      <div class="reveal card-lift bg-white rounded-2xl p-8 border-l-4 border-primary shadow-sm">
+        <div class="stat-num text-4xl font-extrabold text-primary mb-2" data-count="75" data-suffix="+">0</div>
+        <h3 class="font-bold text-xl mb-2">Years of Manufacturing Experience</h3>
+        <p class="text-slate-600">Built on consistency and craftsmanship. Three generations of family ownership since 1944.</p>
+      </div>
+      <div class="reveal card-lift bg-white rounded-2xl p-8 border-l-4 border-primary shadow-sm">
+        <h3 class="font-bold text-xl mb-2">Dealer-Focused Support</h3>
+        <p class="text-slate-600">Fast ordering, technical support, and reliable shipping. Your success is our priority.</p>
+      </div>
+      <div class="reveal card-lift bg-white rounded-2xl p-8 border-l-4 border-primary shadow-sm">
+        <h3 class="font-bold text-xl mb-2">Quality-Driven Manufacturing</h3>
+        <p class="text-slate-600">Every product engineered to perform. Made in the USA with absolute insistence on quality.</p>
+      </div>
+      <div class="reveal card-lift bg-white rounded-2xl p-8 border-l-4 border-primary shadow-sm">
+        <h3 class="font-bold text-xl mb-2">OEM Solutions Available</h3>
+        <p class="text-slate-600">Custom venting systems for manufacturing partners. Engineered to your specifications.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 7: RESOURCES -->
+<section id="support" class="py-24 lg:py-28 bg-white">
+  <div class="max-w-7xl mx-auto px-5 lg:px-8">
+    <div class="grid lg:grid-cols-2 gap-12 items-center">
+      <div class="reveal">
+        <p class="section-label text-primary text-xs font-bold uppercase mb-3">Resources</p>
+        <h2 class="text-3xl lg:text-4xl font-bold mb-4">Technical Support Made Simple</h2>
+        <p class="text-slate-600 mb-8">Everything your team needs to specify, install, and support BDM products — all in one support center.</p>
+        <a href="https://dalsinmfg.com/resources/" class="inline-flex bg-primary text-white px-8 py-4 rounded-xl font-bold hover:bg-primary-dark transition">View Support Center →</a>
+      </div>
+      <div class="grid sm:grid-cols-2 gap-4 reveal">
+        <a href="https://dalsinmfg.com/installation-guides/" class="card-lift flex items-center gap-4 p-5 rounded-xl border border-slate-200 hover:border-primary transition"><svg class="bdm-icon flex-shrink-0"><use href="#ico-catalog"/></svg><span class="font-semibold">Installation Guides</span></a>
+        <a href="https://dalsinmfg.com/warranty/" class="card-lift flex items-center gap-4 p-5 rounded-xl border border-slate-200 hover:border-primary transition"><svg class="bdm-icon flex-shrink-0"><use href="#ico-warranty"/></svg><span class="font-semibold">Warranty Info</span></a>
+        <a href="https://dalsinmfg.com/spec-sheets/" class="card-lift flex items-center gap-4 p-5 rounded-xl border border-slate-200 hover:border-primary transition"><svg class="bdm-icon flex-shrink-0"><use href="#ico-catalog"/></svg><span class="font-semibold">Spec Sheets</span></a>
+        <a href="https://dalsinmfg.com/application-notes/" class="card-lift flex items-center gap-4 p-5 rounded-xl border border-slate-200 hover:border-primary transition"><svg class="bdm-icon flex-shrink-0"><use href="#ico-catalog"/></svg><span class="font-semibold">Application Notes</span></a>
+        <a href="https://dalsinmfg.com/dealer-policies/" class="card-lift flex items-center gap-4 p-5 rounded-xl border border-slate-200 hover:border-primary transition"><svg class="bdm-icon flex-shrink-0"><use href="#ico-dealer"/></svg><span class="font-semibold">Dealer Policies</span></a>
+        <a href="https://dalsinmfg.com/returns-shipping/" class="card-lift flex items-center gap-4 p-5 rounded-xl border border-slate-200 hover:border-primary transition"><svg class="bdm-icon flex-shrink-0"><use href="#ico-box"/></svg><span class="font-semibold">Returns &amp; Shipping</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 8: COMPANY STORY -->
+<section id="history" class="py-24 lg:py-28 bg-charcoal text-white">
+  <div class="max-w-7xl mx-auto px-5 lg:px-8">
+    <div class="grid lg:grid-cols-2 gap-16 items-start">
+      <div class="reveal">
+        <p class="section-label text-primary text-xs font-bold uppercase mb-3">Our Heritage</p>
+        <h2 class="text-3xl lg:text-4xl font-bold mb-6">Three Generations of Manufacturing Excellence</h2>
+        <p class="text-slate-400 mb-8 leading-relaxed">From roofing and fabrication in 1944 to today's industry-leading venting systems — BDM has evolved while never compromising on quality or service.</p>
+        <a href="https://dalsinmfg.com/about/" class="inline-flex border-2 border-white/30 text-white px-8 py-4 rounded-xl font-bold hover:bg-white hover:text-charcoal transition">Learn More About Our History →</a>
+      </div>
+      <div class="relative reveal">
+        <div class="absolute left-4 top-0 bottom-0 w-0.5 timeline-line"></div>
+        <div class="space-y-8 pl-12">
+          <div class="relative"><div class="absolute -left-12 w-8 h-8 rounded-full bg-primary flex items-center justify-center text-xs font-bold">44</div><div class="font-bold text-xl mb-1">1944</div><p class="text-slate-400 text-sm">Roofing &amp; fabrication — the foundation of Bernard Dalsin Manufacturing.</p></div>
+          <div class="relative"><div class="absolute -left-12 w-8 h-8 rounded-full bg-primary flex items-center justify-center text-xs font-bold">69</div><div class="font-bold text-xl mb-1">1969</div><p class="text-slate-400 text-sm">CHIM-A-LATOR® launched — revolutionizing chimney caps and dampers.</p></div>
+          <div class="relative"><div class="absolute -left-12 w-8 h-8 rounded-full bg-primary flex items-center justify-center text-xs font-bold">92</div><div class="font-bold text-xl mb-1">1992</div><p class="text-slate-400 text-sm">Quality-focused expansion into rigid liners, direct vent, and pellet systems.</p></div>
+          <div class="relative"><div class="absolute -left-12 w-8 h-8 rounded-full bg-primary flex items-center justify-center text-xs font-bold">20</div><div class="font-bold text-xl mb-1">2020</div><p class="text-slate-400 text-sm">Third generation leadership — continuing the legacy of excellence.</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 9: TESTIMONIALS -->
+<section id="testimonials" class="py-24 lg:py-28">
+  <div class="max-w-7xl mx-auto px-5 lg:px-8">
+    <div class="text-center max-w-2xl mx-auto mb-14 reveal">
+      <p class="section-label text-primary text-xs font-bold uppercase mb-3">Trusted Nationwide</p>
+      <h2 class="text-3xl lg:text-4xl font-bold mb-4">Trusted by Dealers Across North America</h2>
+    </div>
+    <div class="grid md:grid-cols-3 gap-6 mb-16 reveal">
+      <blockquote class="card-lift bg-white rounded-2xl p-8 border border-slate-200">
+        <p class="text-slate-600 mb-6 italic leading-relaxed">"BDM's CHIM-A-LATOR line is our go-to for every chimney cap install. Quality is consistent, shipping is fast, and their technical team actually picks up the phone."</p>
+        <footer class="font-bold">— Regional Hearth Distributor, Midwest</footer>
+      </blockquote>
+      <blockquote class="card-lift bg-white rounded-2xl p-8 border border-slate-200">
+        <p class="text-slate-600 mb-6 italic leading-relaxed">"We've relined hundreds of chimneys with Dalsin Line rigid liner. The 316L option for oil applications has been a game-changer for our sweep business."</p>
+        <footer class="font-bold">— Chimney Service Professional, Northeast</footer>
+      </blockquote>
+      <blockquote class="card-lift bg-white rounded-2xl p-8 border border-slate-200">
+        <p class="text-slate-600 mb-6 italic leading-relaxed">"As an OEM partner, BDM engineered a custom direct vent solution that met our exact specs. Their manufacturing capability is unmatched in the industry."</p>
+        <footer class="font-bold">— OEM Manufacturing Partner, Southeast</footer>
+      </blockquote>
+    </div>
+    <div class="reveal">
+      <p class="text-center text-xs font-bold uppercase tracking-wider text-slate-400 mb-6">Industry Certifications &amp; Partners</p>
+      <div class="flex flex-wrap justify-center items-center gap-8 lg:gap-12 opacity-60">
+        <div class="text-center"><div class="w-24 h-12 bg-slate-200 rounded flex items-center justify-center text-xs font-bold text-slate-500">UL Listed</div></div>
+        <div class="text-center"><div class="w-24 h-12 bg-slate-200 rounded flex items-center justify-center text-xs font-bold text-slate-500">Made in USA</div></div>
+        <div class="text-center"><div class="w-24 h-12 bg-slate-200 rounded flex items-center justify-center text-xs font-bold text-slate-500">WE LOVE FIRE</div></div>
+        <div class="text-center"><div class="w-24 h-12 bg-slate-200 rounded flex items-center justify-center text-xs font-bold text-slate-500">HPBA Member</div></div>
+        <div class="text-center"><div class="w-24 h-12 bg-slate-200 rounded flex items-center justify-center text-xs font-bold text-slate-500">NCSG</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 10: FINAL CTA -->
+<section id="contact" class="py-24 lg:py-32 bg-gradient-to-br from-charcoal via-steel to-charcoal text-white relative overflow-hidden">
+  <div class="absolute inset-0 opacity-20" style="background:radial-gradient(ellipse at 30% 50%,#d33b19,transparent 60%)"></div>
+  <div class="max-w-4xl mx-auto px-5 lg:px-8 text-center relative reveal">
+    <h2 class="text-3xl lg:text-5xl font-bold mb-6">Ready to Order or Need Help Choosing?</h2>
+    <p class="text-slate-300 text-lg mb-10 max-w-2xl mx-auto">Whether you're a dealer, contractor, or OEM partner, our team is ready to help you find the right venting solution.</p>
+    <div class="flex flex-wrap justify-center gap-4 mb-12">
+      <a href="https://dalsinmfg.com/become-a-dealer/" class="pulse-cta bg-primary text-white px-8 py-4 rounded-xl font-bold hover:bg-primary-dark transition shadow-lg">Request Dealer Access</a>
+      <a href="mailto:sales@dalsinmfg.com" class="border-2 border-white/40 text-white px-8 py-4 rounded-xl font-bold hover:bg-white hover:text-charcoal transition">Talk to Our Team</a>
+    </div>
+    <div class="flex flex-wrap justify-center gap-8 text-slate-300">
+      <a href="tel:8007299505" class="flex items-center gap-2 hover:text-primary transition font-semibold">
+        <svg class="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+        800-729-9505
+      </a>
+      <a href="mailto:sales@dalsinmfg.com" class="flex items-center gap-2 hover:text-primary transition font-semibold">
+        <svg class="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+        sales@dalsinmfg.com
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-dark text-slate-400 py-16 lg:py-20">
+  <div class="max-w-7xl mx-auto px-5 lg:px-8">
+    <div class="grid sm:grid-cols-2 lg:grid-cols-5 gap-10 mb-14">
+      <div class="lg:col-span-1">
+        <img src="https://dalsinmfg.com/wp-content/uploads/2016/04/logo.png" alt="BDM" class="h-9 mb-5 brightness-0 invert">
+        <p class="text-sm leading-relaxed">Professional grade chimney and venting products. Family owned &amp; operated since 1944.</p>
+      </div>
+      <div>
+        <h5 class="text-white font-bold mb-4 text-sm uppercase tracking-wider">Products</h5>
+        <ul class="space-y-2.5 text-sm">
+          <li><a href="https://dalsinmfg.com/shop/" class="hover:text-primary transition">Product Categories</a></li>
+          <li><a href="https://dalsinmfg.com/new-products/" class="hover:text-primary transition">New Products</a></li>
+          <li><a href="https://dalsinmfg.com/catalog/" class="hover:text-primary transition">Catalog</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5 class="text-white font-bold mb-4 text-sm uppercase tracking-wider">Support</h5>
+        <ul class="space-y-2.5 text-sm">
+          <li><a href="https://dalsinmfg.com/warranty/" class="hover:text-primary transition">Warranty</a></li>
+          <li><a href="https://dalsinmfg.com/resources/" class="hover:text-primary transition">Resources</a></li>
+          <li><a href="https://dalsinmfg.com/installation-guides/" class="hover:text-primary transition">Installation Guides</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5 class="text-white font-bold mb-4 text-sm uppercase tracking-wider">Company</h5>
+        <ul class="space-y-2.5 text-sm">
+          <li><a href="https://dalsinmfg.com/about/" class="hover:text-primary transition">About</a></li>
+          <li><a href="https://dalsinmfg.com/history/" class="hover:text-primary transition">History</a></li>
+          <li><a href="https://dalsinmfg.com/contact/" class="hover:text-primary transition">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5 class="text-white font-bold mb-4 text-sm uppercase tracking-wider">Dealers</h5>
+        <ul class="space-y-2.5 text-sm mb-5">
+          <li><a href="https://dalsinmfg.com/my-account/" class="hover:text-primary transition">Dealer Login</a></li>
+          <li><a href="https://dalsinmfg.com/become-a-dealer/" class="hover:text-primary transition">Become a Dealer</a></li>
+        </ul>
+        <a href="https://dalsinmfg.com/my-account/" class="block bg-primary text-white text-center py-2.5 rounded-lg font-bold text-sm hover:bg-primary-dark transition">Dealer Portal</a>
+      </div>
+    </div>
+    <div class="border-t border-slate-800 pt-8 flex flex-col sm:flex-row justify-between items-center gap-4 text-sm">
+      <p>© Bernard Dalsin Manufacturing Company | Since 1944</p>
+      <p class="text-slate-500">Made in USA · Family Owned Since 1944</p>
+    </div>
+  </div>
+</footer>
+
+
+<script src="js/product-finder.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
